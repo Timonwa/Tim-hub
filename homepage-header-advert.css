@@ -1,0 +1,77 @@
+.flex > header {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #b0e0e6;
+    border-top: rgb(148, 184, 189) solid 2px;
+    padding: 25px 15px;
+}
+
+.flex > header > p{
+    flex: 1 1 100%;
+    margin: 0;
+    padding: 10px;
+    font-weight: 300;
+    background-color: rgb(255,255, 255);
+}
+
+.flex > header > div{
+    flex: 1 1 100%;
+    background-color: rgb(255,255, 255);
+    border-top: rgb(243, 235, 235)solid 1px;
+}
+
+.flex > header > .ad1 > img{
+    float: left;
+    width: 50%;
+    height: 100px;
+    border-right: rgb(243, 235, 235)solid 1px;
+}
+
+.flex > header > .ad2 > img{
+    float: right;
+    width: 40%;
+    height: 100px;
+    border-left: rgb(243, 235, 235)solid 1px;
+}
+
+.flex > header > .ad3{
+    padding:10px;
+}
+
+.flex > header > div > p{
+padding: 0 10px;
+margin: 10px 0;
+}
+
+.flex > header > div > a:link{
+    text-decoration: underline;
+    color: black;
+}
+
+.flex > header > div > a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.flex > header > div > a:active{
+    text-decoration: underline;
+    color: black;
+    font-size: 18px;
+}
+
+.flex > header > div > a:visited{
+    text-decoration: underline;
+    color: black;
+}
+
+@media(min-width: 700px){
+   
+    .flex> header> .ad1, .flex> header> .ad2{
+        flex: 1 1 50%;
+    }
+
+    .flex> header> .ad2> img{
+        float: left;
+    }
+ }
