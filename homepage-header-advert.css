@@ -23,8 +23,8 @@
 
 .flex > header > .ad1 > img{
     float: left;
-    width: 50%;
-    height: 100px;
+    width: 55%;
+    height: 120px;
     border-right: rgb(243, 235, 235)solid 1px;
 }
 
@@ -40,8 +40,9 @@
 }
 
 .flex > header > div > p{
-padding: 0 10px;
-margin: 10px 0;
+padding: 0 15px;
+margin: 15px 0;
+font-size: 12px;
 }
 
 .flex > header > div > a:link{

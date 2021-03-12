@@ -19,7 +19,7 @@
     border: black solid 1px;
     border-radius: 5px;
     text-align: left;
-}
+  }
 
   .flex > nav > .nav1 > .sign-in {
     -webkit-box-ordinal-group: 3;
@@ -100,26 +100,12 @@
     font-size: 16px;
   }
 
-  .flex > .recent-post > a {
-    height: 300px;
-    width: 200px;
-    padding: 17px;
+  .flex > .recent-post,
+  .flex > .sections {
   }
 
-  .flex > .sections > a {
-    height: 300px;
-    width: 200px;
-    padding: 17px;
-  }
-
-  .flex > .sections > a > img {
-    height: 250px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
+  .flex > .sections > a > img,
   .flex > .sections > a > p {
-    font-size: 20px;
   }
 
   .flex > .subscription > div > input {
@@ -130,6 +116,11 @@
 
   .flex > .subscription > div > button {
     border-radius: 5px;
+  }
+  .flex > .sections,
+  .flex > .recent-post {
+    padding: 20px 10px;
+    border: solid;
   }
 }
 
@@ -212,15 +203,15 @@
     -webkit-box-flex: 1;
     -ms-flex: 1 1 25%;
     flex: 1 1 25%;
-    height: 250px;
-    width: 250px;
+    width: 300px;
+    height: 340px;
   }
 
   .flex > .sections > a {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 25%;
     flex: 1 1 25%;
-    height: 250px;
-    width: 250px;
+    height: 340px;
+    width: 300px;
   }
 }
