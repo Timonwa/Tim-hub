@@ -235,7 +235,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: powderblue;
+  background-color: rgb(176, 224, 230);
   margin: 25px 15px;
   padding: 20px;
   border-radius: 5px;
@@ -299,7 +299,7 @@ body {
   border-radius: 20px;
   height: 25px;
   border-style: none;
-  background-color: #b0e0e6;
+  background-color: rgb(176, 224, 230);
   font-weight: 600;
   font-size: 16px;
 }

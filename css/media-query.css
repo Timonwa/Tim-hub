@@ -99,29 +99,13 @@
   .flex > nav > .menu > .nav-links > li > a:active {
     font-size: 16px;
   }
+  .flex > header >div .ad1 > img{
+    height: 200px;
+}
 
-  .flex > .recent-post,
-  .flex > .sections {
-  }
-
-  .flex > .sections > a > img,
-  .flex > .sections > a > p {
-  }
-
-  .flex > .subscription > div > input {
-    height: 25px;
-    width: 500px;
-    border-radius: 5px;
-  }
-
-  .flex > .subscription > div > button {
-    border-radius: 5px;
-  }
-  .flex > .sections,
-  .flex > .recent-post {
-    padding: 20px 10px;
-    border: solid;
-  }
+.flex > header > div .ad2 > img{
+    height: 180px;
+}
 }
 
 @media screen and (min-width: 1000px) {
@@ -138,80 +122,21 @@
   }
 
   .flex > .offers {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    padding: 0;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     text-align: center;
-  }
-
-  .flex > .offers > * {
-    visibility: visible;
-    position: relative;
   }
 
   .flex > .offers > div {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 30%;
-    flex: 1 1 30%;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;
-    padding: 5px 0;
+    width: 33.3%;
+  }
+  .flex > .offers > * {
+    visibility: visible;
+    position: relative;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .flex > .subscription {
-    height: 200px;
-  }
-
-  .flex > .subscription > div > p {
-    font-size: 16px;
-    font-weight: 500;
-  }
-
-  .flex > .subscription > div > input {
-    width: 700px;
-    height: 40px;
-    border-radius: 30px 0 0 30px;
-  }
-
-  .flex > .subscription > div > button {
-    width: 130px;
-    height: 40px;
-    border-radius: 0 30px 30px 0;
-  }
-
-  .flex > .recent-post > a {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 25%;
-    flex: 1 1 25%;
-    width: 300px;
-    height: 340px;
-  }
-
-  .flex > .sections > a {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 25%;
-    flex: 1 1 25%;
-    height: 340px;
-    width: 300px;
+    animation: none;
   }
 }

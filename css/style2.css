@@ -1,0 +1,463 @@
+/*! root file */
+:root {
+  /** variables */
+  /* main  background colors */
+  /* --main-bg-white: rgb(255, 255, 255);
+  --main-bg-light-blue: rgb(176, 224, 230);
+  --main-bg-dark-green: rgba(135, 167, 48, 0.7);
+  --main-bg-dark-blue: rgb(93, 111, 114);
+  border colors
+  --border-color-dark-green: rgb(71, 77, 55);
+  --border-color-light-blue: rgb(148, 184, 189);
+  --border-color-dark-blue: rgb(133, 158, 161);
+  --discription-btn-bdr-color: rgb(130, 164, 168);
+  --subscribe-btn-bg: rgba(60, 236, 83, 0.849);
+  --black-color: #000;
+  hover colors
+  --brown: brown;
+  --navlink-hover: rgb(88, 146, 93);
+  --light-green: rgba(135, 167, 48);
+  --dark-blue: rgba(176, 184, 230, 0.534);
+  shadow
+  --shadow-color: rgb(189, 188, 188); */
+
+  /** variables */
+  /* main colors */
+  --main-bg-white: rgb(255, 255, 255);
+  --main-bg-dark-green: rgba(135, 167, 48, 0.7);
+  --main-bg-light-blue: rgb(176, 224, 230);
+  --main-bg-dark-blue: rgb(93, 111, 114);
+  --main-color: rgb(0, 0, 0);
+  /* border colors */
+  --border-color-light-blue: rgb(148, 184, 189);
+  --border-color-dark-blue: rgb(133, 158, 161);
+  --border-color-dark-blue2: rgb(130, 164, 168);
+  --border-color-dark-green: rgb(71, 77, 55);
+  /* other colors */
+  --subscribe-btn-bg: rgba(60, 236, 83, 0.849);
+  --subscribe-btn-hover: rgb(165, 42, 42);
+  --navlink-hover: rgb(88, 146, 93);
+  --shadow-color: rgb(189, 188, 188);
+
+  /* dimensions */
+  --nav-height: 50px;
+  --section-div-margin: 30px;
+  --section-div-padding: 20px;
+}
+/** all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*! ===== LARGE SCREEN FIRST RWD ===== */
+/*! the ffg queries determine the basic styles of the elements in the file */
+/*! the main media queries are located at the end of this file this is just the default media query styles */
+/** extra-large=1440px+ */
+@media screen and (max-width: 1440px) {
+  /* body */
+  body {
+    font-size: 19px;
+  }
+}
+/** large screen=1024px (960px-1024px) */
+/* body */
+body {
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  font-weight: normal;
+  background-color: var(--main-bg-dark-green);
+  color: var(--main-color);
+}
+/* text elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.5em;
+  line-height: 150%;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 0.8rem;
+}
+h2 {
+  margin-bottom: 0.75rem;
+}
+h3 {
+  margin-bottom: 0.6rem;
+}
+h4 {
+  margin-bottom: 0.5rem;
+}
+h5 {
+  margin-bottom: 0.4rem;
+}
+h6 {
+  margin-bottom: 0.3rem;
+}
+p {
+  margin-bottom: 0.5rem;
+}
+/** medium=608px (608px-960px) */
+@media screen and (max-width: 960px) {
+  /* body */
+  body {
+    font-size: 17px;
+  }
+  /* text elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    line-height: 1.4em;
+    line-height: 140%;
+  }
+}
+/** small=400px (400px-608px) */
+@media screen and (max-width: 608px) {
+  /* body */
+  body {
+    font-size: 16px;
+  }
+  /* text elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    line-height: 1.3em;
+    line-height: 130%;
+  }
+}
+/** small=400px (400px and below) */
+@media screen and (max-width: 400px) {
+  /* body */
+  body {
+    font-size: 16px;
+  }
+  /* text elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    line-height: 1.3em;
+    line-height: 130%;
+  }
+}
+/*! ==========  */
+/*! ==========  */
+/*! ==========  */
+/** to ensure that when you click on an id link, the header will not cover the  beginning of the content the id is pointing to */
+[id] {
+  scroll-margin-top: 5em;
+}
+/** reseting the link states to the page's main color and no decoration */
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: var(--black-color);
+}
+/* list */
+ul {
+  list-style: none;
+  list-style-position: unset;
+}
+/*! end of basic css styles */
+/*! ========== */
+/** flex container */
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex > nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-weight: 600;
+  overflow: hidden;
+  height: var(--nav-height);
+  background-color: var(--main-bg-white);
+}
+/** offer slide */
+.flex > .offers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  position: relative;
+}
+.flex > .offers > div {
+  padding: 30px;
+  width: 100vw;
+  background-color: var(--main-bg-white);
+}
+.flex > .offers > div > h3 {
+  margin: 0;
+  padding: 0;
+}
+.flex > .offers > div > p {
+  margin: 0;
+  padding: 0;
+}
+.flex > .offers > div > .offer-title {
+  font-size: 14px;
+}
+.flex > .offers > div > .offer-body {
+  font-size: 12px;
+}
+.flex > .offers > * {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  animation: 12s autoplay1 infinite;
+}
+/* offer slide animation */
+@keyframes autoplay1 {
+  0% {
+    visibility: visible;
+  }
+  33.3% {
+    visibility: hidden;
+  }
+}
+.flex > .offers > *:nth-child(1) {
+  animation-delay: 0s;
+}
+.flex > .offers > *:nth-child(2) {
+  animation-delay: 4s;
+}
+.flex > .offers > *:nth-child(3) {
+  animation-delay: 8s;
+}
+/** subscription */
+.flex > .subscription {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--main-bg-light-blue);
+  margin: var(--section-div-margin);
+  width: calc(100vw - 60px);
+}
+.flex > .subscription > div {
+  padding: var(--section-div-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flex > .subscription > div > p {
+  font-size: 14px;
+  padding: 0 20px;
+}
+.flex > .subscription > div > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.flex > .subscription > div > div> input {
+  margin: 0.5em;
+  padding: 0 10px;
+  border-radius: 20px;
+  height: 20px;
+  border-style: none;
+  font-size: 12px;
+  width: 220px;
+}
+.flex > .subscription > div > div > button {
+  margin: 0.5em;
+  padding: 0 10px;
+  border-radius: 20px;
+  height: 25px;
+  border-style: none;
+  background-color: var(--subscribe-btn-bg);
+  font-weight: 600;
+  font-size: 16px;
+  width: 100px;
+}
+/* recent post */
+.flex > main {
+  background-color: #fff;
+  width: 100%;
+}
+.flex > main > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: var(--section-div-margin);
+  margin-left: 0;
+  margin-right: 0;
+  padding: var(--section-div-padding);
+}
+.flex > .recent-post > div > h3 {
+  text-align: center;
+}
+.flex > .recent-post > div >div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex > .recent-post > div > div a {
+  height: 240px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--main-color);
+  margin: 20px;
+}
+
+.flex > .recent-post > div > div > a > img {
+  width: inherit;
+  height: 200px;
+  margin: 10px;
+  box-shadow: 0px 0px 2px var(--shadow-color);
+  border-radius: 20px;
+}
+
+.flex > .recent-post > div > div > a > p {
+  font-weight: 500;
+  margin: 0 10px 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.flex > .sections > h3 {
+  text-align: center;
+}
+.flex > .sections > div > div  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+}
+.flex > .sections > div > div >a {
+  height: 240px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000000;
+  margin: 20px;
+}
+.flex > .sections > div >div > a > img {
+  width: inherit;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0px 0px 2px var(--shadow-color);
+}
+.flex > .sections > div> div> a > p {
+  font-weight: 500;
+  box-shadow: 0px 0px 2px var(--shadow-color);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 5px 0;
+  width: inherit;
+}
+.flex > .description {
+  background-color: var(--main-bg-light-blue);
+  text-align: center;
+  border-top: rgb(148, 184, 189) solid 2px;
+  padding: var(--section-div-padding);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.flex > .description > div > a:link {
+  text-decoration: underline;
+}
+.flex > .description > div > div {
+  margin: 20px;
+}
+.flex > .description > div > div > .dis-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.flex > .description > div > div > .dis-body {
+  font-weight: 200;
+}
+.flex > .description > div > p {
+  font-weight: 500;
+}
+.flex > .description > div > button {
+  border: solid 1.5px var(--border-color-dark-blue);
+  border-radius: 40px;
+  font-size: 13px;
+  padding: 7px 10px;
+}
+.flex > footer {
+  display: flex;
+  flex-direction: column;
+  color: var(--main-bg-white);
+  width: 100%;
+}
+.flex > footer > section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: var(--main-bg-dark-blue);
+  padding: var(--section-div-padding);
+}
+.flex > footer > section > ul {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  list-style-type: none;
+}
+.flex > footer > .contact-info {
+  border-top: var(--border-color-dark-blue) solid 2px;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+.flex > footer > .contact-info > ul > li > a {
+  font-size: 16px;
+}
+.flex > footer > .end {
+  display: flex;
+  flex-direction: row;
+  border-top: var(--main-bg-white) solid 1px;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+.flex > footer > .end > p {
+  width: 50%;
+}
+.flex > footer > .end > ul {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
