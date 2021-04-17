@@ -312,6 +312,8 @@ ul {
   margin-left: 0;
   margin-right: 0;
   padding: var(--section-div-padding);
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .flex > .recent-post > div > h3 {
   text-align: center;
@@ -325,23 +327,27 @@ ul {
 }
 
 .flex > .recent-post > div > div a {
-  height: 240px;
-  width: 200px;
+  /* height: 140px; */
+  width: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   color: var(--main-color);
-  margin: 20px;
+  margin: 10px;
 }
 
 .flex > .recent-post > div > div > a > img {
   width: inherit;
-  height: 200px;
+  height: 140px;
   margin: 10px;
   box-shadow: 0px 0px 2px var(--shadow-color);
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .flex > .recent-post > div > div > a > p {
@@ -361,20 +367,20 @@ ul {
   align-items: center; 
 }
 .flex > .sections > div > div >a {
-  height: 240px;
-  width: 200px;
+  /* height: max-content; */
+  width: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   border-radius: 5px;
   text-decoration: none;
   color: #000000;
-  margin: 20px;
+  margin: 10px;
 }
 .flex > .sections > div >div > a > img {
-  width: inherit;
-  height: 200px;
+  width: 130px;
+  height: 140px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   box-shadow: 0px 0px 2px var(--shadow-color);
