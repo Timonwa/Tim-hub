@@ -1,70 +1,87 @@
 .flex > header {
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   background-color: var(--main-bg-light-blue);
   border-top: var(--main-bg-dark-blue) solid 2px;
 }
 
-.flex > header > div {
+.flex > header > div > div.cntr {
   margin: var(--section-div-margin);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: var(--main-bg-white);
 }
-.flex > header > div p {
+.flex > header > div > div p {
   margin: 0;
   padding: 10px;
   font-weight: 300;
+  width: 100%;
 }
 
-.flex > header > div >div {
+.flex > header > div > div > div {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   border-top: rgb(243, 235, 235) solid 1px;
 }
-.flex > header > div div> div {
+.flex > header > div > div> div > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
   margin: auto;
+  text-align: center;
 }
 
-.flex > header > div .ad1 > img {
-  float: left;
+.flex > header > div > div .ad1 > img {
   width: 55%;
   height: 120px;
   border-right: rgb(243, 235, 235) solid 1px;
 }
 
-.flex > header > div .ad2 > img {
-  float: right;
+.flex > header > div > div .ad2 > img {
   width: 40%;
   height: 100px;
   border-left: rgb(243, 235, 235) solid 1px;
 }
 
-.flex > header > div .ad3 {
+.flex > header > div > div .ad3 {
+  width: 100%;
   padding: 10px;
 }
 
-.flex > header > div div > p {
+.flex > header > div > div div > p {
   padding: 0 15px;
   margin: 15px 0;
   font-size: 12px;
 }
 
 @media (min-width: 700px) {
-  .flex > header > .ad1,
-  .flex > header > .ad2 {
+  .flex > header > div > div > div {
     width: 50%;
   }
+  .flex > header > div > div.cntr {
+    margin: 50px 70px;
+  }
+  .flex > header > div > div .ad2 {
+    flex-direction: row-reverse;
+    height: 200px;
+  }
+  .flex > header > div > div .ad1 > img,
+  .flex > header > div > div .ad2 > img {
+    width: 200px;
+    height: 200px;
+  }
+}
 
-  .flex > header > .ad2 > img {
-    float: left;
+@media (min-width: 1000px) {
+  .flex > header > div > div.cntr {
+    margin: 50px 100px;
   }
 }

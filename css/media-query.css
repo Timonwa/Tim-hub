@@ -1,4 +1,14 @@
+@media screen and (max-width: 320px) {
+  .flex > main > div {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 @media screen and (min-width: 700px) {
+  :root {
+    --section-div-margin: 30px;
+    --section-div-padding: 20px 70px;
+  }
   .flex > nav > .nav1 > .home {
     -webkit-box-ordinal-group: 1;
     -ms-flex-order: 0;
@@ -99,16 +109,33 @@
   .flex > nav > .menu > .nav-links > li > a:active {
     font-size: 16px;
   }
-  .flex > header >div .ad1 > img{
+  .flex > header {
+  background-color: #fff;
+}
+  .flex > header > div .ad1 > img {
     height: 200px;
-}
+  }
 
-.flex > header > div .ad2 > img{
+  .flex > header > div .ad2 > img {
     height: 180px;
+  }
+.flex > .offers {
+  display: none;
 }
+  .flex > .subscription {
+  width: calc(100vw - 200px);
+}
+  .flex > .sections > div > div > a,
+  .flex > .recent-post > div > div a {
+    margin: 20px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
+  :root {
+    --section-div-margin: 30px;
+    --section-div-padding: 20px 100px;
+  }
   .flex > nav > .nav1 > .home {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 10%;
@@ -139,4 +166,8 @@
     bottom: 0;
     animation: none;
   }
+    .flex > .subscription {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 }
