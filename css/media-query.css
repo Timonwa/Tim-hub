@@ -110,8 +110,8 @@
     font-size: 16px;
   }
   .flex > header {
-  background-color: #fff;
-}
+    background-color: #fff;
+  }
   .flex > header > div .ad1 > img {
     height: 200px;
   }
@@ -119,12 +119,9 @@
   .flex > header > div .ad2 > img {
     height: 180px;
   }
-.flex > .offers {
-  display: none;
-}
   .flex > .subscription {
-  width: calc(100vw - 200px);
-}
+    width: calc(100vw - 200px);
+  }
   .flex > .sections > div > div > a,
   .flex > .recent-post > div > div a {
     margin: 20px;
@@ -147,27 +144,7 @@
     -ms-flex: 1 1 75%;
     flex: 1 1 75%;
   }
-
   .flex > .offers {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    display: none;
   }
-
-  .flex > .offers > div {
-    width: 33.3%;
-  }
-  .flex > .offers > * {
-    visibility: visible;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    animation: none;
-  }
-    .flex > .subscription {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
 }

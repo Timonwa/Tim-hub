@@ -60,6 +60,10 @@
   padding: 0 15px;
   margin: 15px 0;
   font-size: 12px;
+  font-weight: 500;
+}
+.flex > header > div > div div > a {
+  font-weight: 500;
 }
 
 @media (min-width: 700px) {
@@ -68,6 +72,9 @@
   }
   .flex > header > div > div.cntr {
     margin: 50px 70px;
+  }
+  .flex > header > div > div .ad2 img {
+  border: rgb(243, 235, 235) solid 1px;
   }
   .flex > header > div > div .ad2 {
     flex-direction: row-reverse;

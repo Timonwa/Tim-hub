@@ -13,8 +13,9 @@
   --border-color-dark-blue2: rgb(130, 164, 168);
   --border-color-dark-green: rgb(71, 77, 55);
   /* other colors */
-  --subscribe-btn-bg: rgba(135, 167, 48);
-  --subscribe-btn-hover: rgb(165, 42, 42);
+  --subscribe-btn-bg: hsl(0, 80%, 50%);
+  --subscribe-btn-hover: rgb(255, 255, 255);
+  --subscribe-btn-clicked: hsl(120, 100%, 45%);
   --navlink-hover: rgb(88, 146, 93);
   --shadow-color: rgb(189, 188, 188);
 
@@ -22,6 +23,9 @@
   --nav-height: 50px;
   --section-div-margin: 30px;
   --section-div-padding: 20px;
+  /* font */
+  --ff1: "Crimson Text", serif;
+  --ff2: "Source Sans Pro", sans-serif;
 }
 /** all elements */
 * {
@@ -43,10 +47,11 @@
 /* body */
 body {
   font-size: 18px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--ff2);
   font-weight: normal;
   background-color: var(--main-bg-dark-green);
   color: var(--main-color);
+  overflow-x: hidden;
 }
 /* text elements */
 h1,
@@ -59,6 +64,7 @@ p {
   line-height: 1.5em;
   line-height: 150%;
   text-align: center;
+  font-family: var(--ff1);
 }
 h1 {
   margin-bottom: 0.8rem;
@@ -80,6 +86,7 @@ h6 {
 }
 p {
   margin-bottom: 0.5rem;
+  font-family: var(--ff2);
 }
 /** medium=608px (608px-960px) */
 @media screen and (max-width: 960px) {
@@ -150,10 +157,10 @@ a:active,
 a:visited {
   text-decoration: none;
   color: var(--black-color);
-  cursor:pointer;
+  cursor: pointer;
 }
 /* button */
-button{
+button {
   cursor: pointer;
 }
 /* list */
@@ -181,6 +188,7 @@ ul {
 }
 /** offer slide */
 .flex > .offers {
+  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,6 +283,7 @@ ul {
   border-radius: 20px;
   border-style: none;
   background-color: var(--subscribe-btn-bg);
+  color: #eee;
   font-weight: 600;
   font-size: 18px;
   padding: 5px 10px;
@@ -445,4 +454,24 @@ ul {
   display: flex;
   flex-direction: column;
   width: 50%;
+}
+/** hover states */
+.flex > header > div > div div > a:hover {
+  text-decoration: underline;
+}
+.flex > .subscription > div > div > button:hover {
+  background: var(--main-bg-dark-blue);
+}
+.flex > .recent-post > div > div a:hover,
+.flex > .sections > div > div > a:hover{
+  color: var(--main-bg-dark-green);
+}
+.flex > .description > div > a:hover {
+  text-decoration: none;
+}
+.flex > .description > div > button:hover {
+  font-size: 14px;
+}
+footer > section > ul > li > a:hover{
+color: var(--main-bg-light-blue);
 }
