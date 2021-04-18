@@ -24,8 +24,8 @@
   --section-div-margin: 30px;
   --section-div-padding: 20px;
   /* font */
-    --ff1: cursive;
-    --ff2: serif;
+  --ff1: cursive;
+  --ff2: serif;
 }
 /** all elements */
 * {
@@ -192,16 +192,37 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 10px;
   height: 60px;
+  /* border: solid; */
 }
 .flex > nav > div.home {
   margin-left: 20px;
-  width: 110px;
+  width: calc(100vw - 215px);
   font-family: var(--ff2);
+  order: 0;
+  justify-content: start;
+}
+.flex > nav > div.cart {
+  width: 40px;
+  order: 1;
+}
+.flex > nav > div.sign-in {
+  font-family: var(--ff2);
+  width: 75px;
+  order: 2;
+}
+.flex > nav > div.menu-warp {
+  margin-right: 20px;
+  width: 40px;
+  display: flex;
+  order: 3;
 }
 .flex > nav > div.search-bar {
-  width: calc(100vw - 325px);
+  width: 100%;
+  padding: 0 40px;
+  order: 4;
+  border-top: solid 1px var(--border-color-dark-blue2);
 }
 .flex > nav > div.search-bar input {
   font-family: cursive;
@@ -227,50 +248,8 @@ ul {
   -ms-border-radius: 0 50px 50px 0;
   -o-border-radius: 0 50px 50px 0;
 }
-.flex > nav > div.cart {
-  width: 60px;
-}
-.flex > nav > div.sign-in {
-  font-family: var(--ff2);
-  width: 95px;
-  margin-right: 20px;
-}
-/*  */
-.flex > nav > div.menu-warp {
-  margin-right: 20px;
-  width: 90px;
-  display: none;
-}
 .flex > nav > div.menu {
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  background-color: var(--main-bg-dark-green);
-  border-top: var(--border-color-dark-green) solid 2px;
-}
-.flex > nav > div.menu > ul {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.flex > nav > div.menu > ul > li {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  width: 25%;
-}
-.flex > nav > div.menu > ul > li> a {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  width: 100%;
+  display: none;
 }
 
 /** offer slide */
