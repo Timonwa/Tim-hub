@@ -13,6 +13,8 @@
   --border-color-dark-blue2: rgb(130, 164, 168);
   --border-color-dark-green: rgb(71, 77, 55);
   /* other colors */
+  --nav-bar-color: hsl(0, 10%, 20%);
+  --search-bar-bg: hsl(0, 0%, 95%);
   --subscribe-btn-bg: hsl(0, 80%, 50%);
   --subscribe-btn-hover: rgb(255, 255, 255);
   --subscribe-btn-clicked: hsl(120, 100%, 45%);
@@ -185,7 +187,7 @@ ul {
   overflow: hidden;
   width: 100%;
   background-color: var(--main-bg-white);
-  color: hsl(0, 10%, 20%);
+  color: var(--nav-bar-color);
   padding-top: 10px;
 }
 .flex > nav > div {
@@ -231,8 +233,9 @@ ul {
   height: 30px;
   border-radius: 50px 0 0 50px;
   padding: 10px;
-  border: 1px solid;
-  background-color: hsl(0, 0%, 95%);
+  border: solid 1px #ddd;
+  box-shadow: inset 0px 0px 10px #ddd;
+  background-color: var(--search-bar-bg);
 }
 .flex > nav > div.search-bar button {
   width: 45px;
@@ -240,8 +243,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid;
-  background-color: hsl(0, 0%, 95%);
+  border: 1px solid #ddd;
+  background-color: var(--search-bar-bg);
   border-radius: 0 50px 50px 0;
   -webkit-border-radius: 0 50px 50px 0;
   -moz-border-radius: 0 50px 50px 0;
@@ -522,6 +525,16 @@ ul {
   width: 50%;
 }
 /** hover states */
+.flex > nav > div.search-bar input:focus {
+  box-shadow: 0px 0px 10px #ddd;
+}
+.flex > nav > div.search-bar input:focus ~ button {
+  background: var(--nav-bar-color);
+  color: #ddd;
+}
+.flex > nav > div.menu > ul > li > a:hover {
+background-color: var(--navlink-hover);
+}
 .flex > header > div > div div > a:hover {
   text-decoration: underline;
 }
