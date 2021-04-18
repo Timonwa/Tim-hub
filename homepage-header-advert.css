@@ -14,7 +14,7 @@
   flex-wrap: wrap;
   background-color: var(--main-bg-white);
 }
-.flex > header > div > div p {
+.flex > header > div > div> p {
   margin: 0;
   padding: 10px;
   font-weight: 300;
@@ -64,8 +64,14 @@
 }
 .flex > header > div > div div > a {
   font-weight: 500;
+  font-family: cursive;
 }
 
+@media (min-width: 500px) {
+:root {
+    --section-div-margin: 60px;
+  }
+}
 @media (min-width: 700px) {
   .flex > header > div > div > div {
     width: 50%;
