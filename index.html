@@ -17,7 +17,7 @@
     <!-- icons -->
     <link rel="stylesheet" href="fontawesome5.15\css\all.css" />
     <!-- css -->
-    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="homepage-header-advert.css" />
     <link rel="stylesheet" href="css/media-query.css" />
   </head>
@@ -25,42 +25,62 @@
   <body>
     <div class="flex">
       <nav>
-        <!-- the navigation bar-->
-        <div class="home">
-          <a href="index.html">Timonwa</a>
-        </div>
+        <div>
+          <!-- the navigation bar-->
+          <div class="home">
+            <a href="index.html">Timonwa</a>
+          </div>
 
-        <div class="search-bar">
-          <input
-            type="search"
-            placeholder="What are you looking for..."
-          />
-          <button type="submit"><i class="fas fa-search"></i></button>
-        </div>
+          <div class="search-bar">
+            <input type="search" placeholder="What are you looking for..." />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
 
-        <div class="cart">
-          <a href="cart.html">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-        </div>
+          <div class="cart">
+            <a href="cart.html">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
 
-        <div class="sign-in">
-          <a href="sign-in.html">Sign In</a>
-        </div>
+          <div class="sign-in">
+            <a href="sign-in.html">Sign In</a>
+          </div>
 
-        <div class="menu-warp">
-          <i class="fas fa-bars"></i>
-        </div>
+          <div id="menu-warp" class="menu-warp" onclick="myfunction()">
+            <i id="open" class="fas fa-bars"></i>
+            <i id="close" class="fas fa-times"></i>
+          </div>
 
-        <div class="menu">
-          <ul class="nav-links">
-            <li><a href="#" target="_blank">Skin Care</a></li>
-            <li><a href="#">Home Deco</a></li>
-            <li><a href="#">Gift Ideas</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
+          <div id="menu">
+            <ul class="nav-links">
+              <h4>Browse Categories</h4>
+              <li>
+                <a href="#" target="_blank">Skin Care</a
+                ><i class="fas fa-chevron-down"></i>
+              </li>
+              <li>
+                <a href="#">Home Deco</a><i class="fas fa-chevron-down"></i>
+              </li>
+              <li>
+                <a href="#">Gift Ideas</a><i class="fas fa-chevron-down"></i>
+              </li>
+              <li>
+                <a href="#">Graphic Design</a
+                ><i class="fas fa-chevron-down"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="menu">
+            <ul class="nav-links">
+              <li><a href="#" target="_blank">Skin Care</a></li>
+              <li><a href="#">Home Deco</a></li>
+              <li><a href="#">Gift Ideas</a></li>
+              <li><a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
+      <div class="nav-cover"></div>
 
       <header>
         <div>
@@ -273,5 +293,7 @@
         </section>
       </footer>
     </div>
+    <!--* script -->
+    <script src="index.js"></script>
   </body>
 </html>

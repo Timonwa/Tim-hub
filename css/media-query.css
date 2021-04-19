@@ -15,18 +15,18 @@
     --section-div-padding: 20px 70px;
   }
 
-  .flex > nav > div.home {
+  .flex > nav > div > div.home {
     margin-left: 20px;
     width: 110px;
     font-family: var(--ff2);
     order: 0;
   }
-  .flex > nav > div.search-bar {
+  .flex > nav > div > div.search-bar {
     width: calc(100vw - 325px);
     order: 1;
     border-top: none;
   }
-  .flex > nav > div.search-bar input {
+  .flex > nav > div > div.search-bar input {
     font-family: cursive;
     width: calc(100% - 45px);
     min-width: 100px;
@@ -35,7 +35,7 @@
     padding: 10px;
     background-color: hsl(0, 0%, 95%);
   }
-  .flex > nav > div.search-bar button {
+  .flex > nav > div > div.search-bar button {
     width: 45px;
     height: 30px;
     display: flex;
@@ -48,20 +48,20 @@
     -ms-border-radius: 0 50px 50px 0;
     -o-border-radius: 0 50px 50px 0;
   }
-  .flex > nav > div.cart {
+  .flex > nav > div > div.cart {
     width: 60px;
     order: 2;
   }
-  .flex > nav > div.sign-in {
+  .flex > nav > div > div.sign-in {
     font-family: var(--ff2);
     width: 95px;
     margin-right: 20px;
     order: 3;
   }
-  .flex > nav > div.menu-warp {
+  .flex > nav > div > div.menu-warp {
   display: none;
 }
-  .flex > nav > div.menu {
+  .flex > nav > div > div.menu {
     display: flex;
     align-items: center;
     width: 100%;
@@ -70,14 +70,14 @@
     border-top: var(--border-color-dark-green) solid 2px;
     order: 4;
   }
-  .flex > nav > div.menu > ul {
+  .flex > nav > div > div.menu > ul {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  .flex > nav > div.menu > ul > li {
+  .flex > nav > div > div.menu > ul > li {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -85,7 +85,7 @@
     height: 60px;
     width: 25%;
   }
-  .flex > nav > div.menu > ul > li > a {
+  .flex > nav > div > div.menu > ul > li > a {
     display: flex;
     flex-direction: row;
     justify-content: center;
