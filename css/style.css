@@ -27,8 +27,9 @@
   --section-div-margin: 30px;
   --section-div-padding: 20px;
   /* font */
-  --ff1: cursive;
-  --ff2: serif;
+  --ff1: "Dancing Script", cursive;
+  --ff2: "Raleway", sans-serif;
+  --ff3: "Playfair Display", serif;
 }
 /** all elements */
 * {
@@ -50,7 +51,7 @@
 /* body */
 body {
   font-size: 18px;
-  font-family: var(--ff1);
+  font-family: var(--ff2);
   font-weight: normal;
   background-color: var(--main-bg-dark-green);
   color: var(--main-color);
@@ -67,7 +68,7 @@ p {
   line-height: 1.5em;
   line-height: 150%;
   text-align: center;
-  font-family: var(--ff1);
+  font-family: var(--ff3);
 }
 h1 {
   margin-bottom: 0.8rem;
@@ -89,7 +90,6 @@ h6 {
 }
 p {
   margin-bottom: 0.5rem;
-  font-family: var(--ff1);
 }
 /** medium=608px (608px-960px) */
 @media screen and (max-width: 960px) {
@@ -165,7 +165,7 @@ a:visited {
 input:focus,
 select:focus,
 textarea:focus,
-button:focus{
+button:focus {
   outline: none;
 }
 
@@ -187,7 +187,7 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.flex > .nav-cover{
+.flex > .nav-cover {
   height: 130px;
 }
 .flex > nav {
@@ -208,7 +208,7 @@ ul {
   position: relative;
   /* height: 190px; */
 }
-.flex > nav > div > div{
+.flex > nav > div > div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,19 +216,21 @@ ul {
   height: 60px;
   /* border: solid; */
 }
-.flex > nav>div > div.home {
+.flex > nav > div > div.home {
   margin-left: 20px;
   width: calc(100vw - 215px);
-  font-family: var(--ff2);
+  font-family: var(--ff1);
   order: 0;
   justify-content: start;
+  color: var(--main-bg-light-blue);
+  font-size: 1.5em;
 }
 .flex > nav > div > div.cart {
   width: 40px;
   order: 1;
 }
 .flex > nav > div > div.sign-in {
-  font-family: var(--ff2);
+  font-family: var(--ff3);
   width: 75px;
   order: 2;
 }
@@ -238,7 +240,7 @@ ul {
   display: flex;
   order: 3;
 }
-.flex > nav > div > div.menu-warp >#close {
+.flex > nav > div > div.menu-warp > #close {
   display: none;
 }
 .flex > nav > div > div.search-bar {
@@ -248,7 +250,7 @@ ul {
   border-top: solid 1px var(--border-color-dark-blue2);
 }
 .flex > nav > div > div.search-bar input {
-  font-family: cursive;
+  font-family: var(--ff2);
   width: calc(100% - 45px);
   min-width: 100px;
   height: 30px;
@@ -294,7 +296,7 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.flex > nav > div > div#menu > ul > h4{
+.flex > nav > div > div#menu > ul > h4 {
   border-top: var(--search-bar-bg) solid 2px;
   display: flex;
   flex-direction: row;
@@ -321,6 +323,7 @@ ul {
   height: 70px;
   width: calc(100% - 40px);
   font-weight: normal;
+  font-family: var(--ff3);
 }
 .flex > nav > div > div#menu > ul > li > i {
   display: flex;
@@ -340,6 +343,7 @@ ul {
   text-align: center;
   height: 100px;
   position: relative;
+  font-family: var(--ff3);
 }
 .flex > .offers > div {
   padding: 30px;
@@ -347,10 +351,12 @@ ul {
   background-color: var(--main-bg-white);
 }
 .flex > .offers > div > h3 {
+  font-family: var(--ff3);
   margin: 0;
   padding: 0;
 }
 .flex > .offers > div > p {
+  font-family: var(--ff3);
   margin: 0;
   padding: 0;
 }
@@ -404,9 +410,10 @@ ul {
   align-items: center;
   justify-content: center;
 }
-.flex > .subscription > div > p {
-  font-size: 14px;
+.flex > .subscription > div > h3 {
   padding: 0 20px;
+  font-weight: 700;
+  font-family: var(--ff1);
 }
 .flex > .subscription > div > div {
   display: flex;
@@ -421,6 +428,7 @@ ul {
   border-radius: 20px;
   border-style: none;
   width: 220px;
+  font-family: var(--ff3);
 }
 .flex > .subscription > div > div > button {
   margin: 0.5em;
@@ -432,6 +440,7 @@ ul {
   font-weight: 600;
   font-size: 18px;
   padding: 5px 10px;
+  font-family: var(--ff3);
 }
 /* recent post */
 .flex > main {
@@ -448,8 +457,14 @@ ul {
   margin-right: 0;
   padding: var(--section-div-padding);
 }
-.flex > .recent-post > div > h3 {
+.flex > main > div > h3 {
+  font-family: var(--ff3);
   text-align: center;
+}
+.flex > main > div > div > a > p {
+  font-family: var(--ff2);
+  font-weight: 600;
+  font-size: 14px;
 }
 .flex > .recent-post > div > div {
   display: flex;
@@ -460,7 +475,6 @@ ul {
 }
 
 .flex > .recent-post > div > div a {
-  /* height: 140px; */
   width: 130px;
   display: flex;
   flex-direction: column;
@@ -484,13 +498,12 @@ ul {
 }
 
 .flex > .recent-post > div > div > a > p {
-  font-weight: 500;
   margin: 0 10px 10px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.flex > .sections > h3 {
-  text-align: center;
+.flex > .sections {
+  border-top: solid 1px var(--border-color-dark-blue);
 }
 .flex > .sections > div > div {
   display: flex;
@@ -519,7 +532,6 @@ ul {
   box-shadow: 0px 0px 2px var(--shadow-color);
 }
 .flex > .sections > div > div > a > p {
-  font-weight: 500;
   box-shadow: 0px 0px 2px var(--shadow-color);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -536,25 +548,27 @@ ul {
 }
 .flex > .description > div > a:link {
   text-decoration: underline;
+  font-family: var(--ff3);
 }
 .flex > .description > div > div {
   margin: 20px;
 }
 .flex > .description > div > div > .dis-title {
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 600;
 }
 .flex > .description > div > div > .dis-body {
   font-weight: 200;
 }
 .flex > .description > div > p {
-  font-weight: 500;
+  font-weight: 600;
 }
 .flex > .description > div > button {
   border: solid 1.5px var(--border-color-dark-blue);
   border-radius: 40px;
   font-size: 13px;
   padding: 7px 10px;
+  font-family: var(--ff2);
+  font-weight: 600;
 }
 .flex > footer {
   display: flex;
@@ -583,6 +597,7 @@ ul {
 }
 .flex > footer > .contact-info > ul > li > a {
   font-size: 16px;
+  /* font-family: var(--ff3); */
 }
 .flex > footer > .end {
   display: flex;
@@ -594,6 +609,7 @@ ul {
 }
 .flex > footer > .end > p {
   width: 50%;
+  font-family: var(--ff2);
 }
 .flex > footer > .end > ul {
   display: flex;
@@ -608,12 +624,12 @@ ul {
   background: var(--search-btn-bg);
   color: var(--main-bg-dark-blue);
 }
-.flex > nav > div > div#menu > ul > li> i:hover{
+.flex > nav > div > div#menu > ul > li > i:hover {
   background: var(--search-btn-bg);
   color: var(--main-bg-dark-blue);
 }
 .flex > nav > div > div.menu > ul > li > a:hover {
-  background-color: var(--navlink-hover);
+  color: #000;
 }
 .flex > header > div > div div > a:hover {
   text-decoration: underline;

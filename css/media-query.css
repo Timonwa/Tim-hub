@@ -18,7 +18,6 @@
   .flex > nav > div > div.home {
     margin-left: 20px;
     width: 110px;
-    font-family: var(--ff2);
     order: 0;
   }
   .flex > nav > div > div.search-bar {
@@ -27,7 +26,6 @@
     border-top: none;
   }
   .flex > nav > div > div.search-bar input {
-    font-family: cursive;
     width: calc(100% - 45px);
     min-width: 100px;
     height: 30px;
@@ -53,14 +51,13 @@
     order: 2;
   }
   .flex > nav > div > div.sign-in {
-    font-family: var(--ff2);
     width: 95px;
     margin-right: 20px;
     order: 3;
   }
   .flex > nav > div > div.menu-warp {
-  display: none;
-}
+    display: none;
+  }
   .flex > nav > div > div.menu {
     display: flex;
     align-items: center;
@@ -92,6 +89,7 @@
     align-items: center;
     height: 60px;
     width: 100%;
+    font-family: var(--ff3);
   }
   .flex > header {
     background-color: #fff;

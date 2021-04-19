@@ -14,7 +14,7 @@
   flex-wrap: wrap;
   background-color: var(--main-bg-white);
 }
-.flex > header > div > div> p {
+.flex > header > div > div > p {
   margin: 0;
   padding: 10px;
   font-weight: 300;
@@ -29,7 +29,7 @@
   align-items: center;
   border-top: rgb(243, 235, 235) solid 1px;
 }
-.flex > header > div > div> div > div {
+.flex > header > div > div > div > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,19 +56,19 @@
   padding: 10px;
 }
 
-.flex > header > div > div div > p {
+.flex > header > div > div div > h4 {
   padding: 0 15px;
   margin: 15px 0;
-  font-size: 12px;
   font-weight: 500;
+  font-family: var(--ff1);
 }
 .flex > header > div > div div > a {
-  font-weight: 500;
-  font-family: cursive;
+  font-weight: 600;
+  font-family: var(--ff3);
 }
 
 @media (min-width: 500px) {
-:root {
+  :root {
     --section-div-margin: 60px;
   }
 }
@@ -80,7 +80,7 @@
     margin: 50px 70px;
   }
   .flex > header > div > div .ad2 img {
-  border: rgb(243, 235, 235) solid 1px;
+    border: rgb(243, 235, 235) solid 1px;
   }
   .flex > header > div > div .ad2 {
     flex-direction: row-reverse;
