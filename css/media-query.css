@@ -1,226 +1,120 @@
-@media screen and (min-width: 700px) {
-  .flex > nav > .nav1 > .home {
-    -webkit-box-ordinal-group: 1;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 13%;
-    flex: 1 1 13%;
-    letter-spacing: 3px;
+@media screen and (max-width: 320px) {
+  .flex > main > div {
+    padding-left: 10px;
+    padding-right: 10px;
   }
-
-  .flex > nav > .nav1 > input {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 70%;
-    flex: 1 1 70%;
-    border: black solid 1px;
-    border-radius: 5px;
-    text-align: left;
 }
+@media screen and (min-width: 500px) {
+  .flex > .subscription {
+    width: calc(100vw - 120px);
+  }
+}
+@media screen and (min-width: 700px) {
+  :root {
+    --section-div-margin: 30px;
+    --section-div-padding: 20px 70px;
+  }
 
-  .flex > nav > .nav1 > .sign-in {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
+  .flex > nav > div > div.home {
+    margin-left: 20px;
+    width: 110px;
+    order: 0;
+  }
+  .flex > nav > div > div.search-bar {
+    width: calc(100vw - 325px);
+    order: 1;
+    border-top: none;
+  }
+  .flex > nav > div > div.search-bar input {
+    width: calc(100% - 45px);
+    min-width: 100px;
+    height: 30px;
+    border-radius: 50px 0 0 50px;
+    padding: 10px;
+    background-color: hsl(0, 0%, 95%);
+  }
+  .flex > nav > div > div.search-bar button {
+    width: 45px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 0 50px 50px 0;
+    -webkit-border-radius: 0 50px 50px 0;
+    -moz-border-radius: 0 50px 50px 0;
+    -ms-border-radius: 0 50px 50px 0;
+    -o-border-radius: 0 50px 50px 0;
+  }
+  .flex > nav > div > div.cart {
+    width: 60px;
     order: 2;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 7%;
-    flex: 1 1 7%;
-    text-align: right;
   }
-
-  .flex > nav > .nav1 > .cart {
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
+  .flex > nav > div > div.sign-in {
+    width: 95px;
+    margin-right: 20px;
     order: 3;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 3%;
-    flex: 1 1 3%;
-    text-align: center;
   }
-
-  .flex > nav > .menu {
-    display: contents;
-  }
-
-  .flex > nav > .nav1 > .menu-warp {
+  .flex > nav > div > div.menu-warp {
     display: none;
   }
-
-  .flex > nav > .menu {
-    display: inline-block;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 100%;
-    flex: 1 1 100%;
-    background-color: rgba(135, 167, 48, 0.7);
-    -webkit-box-ordinal-group: 6;
-    -ms-flex-order: 5;
-    order: 5;
-    flex: 1 1 100%;
-    border-top: rgb(71, 77, 55) solid 2px;
-  }
-
-  .flex > nav > .menu > .nav-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  .flex > nav > div > div.menu {
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--main-bg-dark-green);
+    border-top: var(--border-color-dark-green) solid 2px;
+    order: 4;
   }
-
-  .flex > nav > .menu > .nav-links > li {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1;
-    flex: 1 1;
-    list-style-type: none;
-    padding: 10px 0;
-    text-align: center;
-  }
-
-  .flex > nav > .menu > .nav-links > li > a {
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-    font-size: 18px;
-  }
-
-  .flex > nav > .menu > .nav-links > li:hover {
-    background-color: rgb(88, 146, 93);
-  }
-
-  .flex > nav > .menu > .nav-links > li > a:active {
-    font-size: 16px;
-  }
-
-  .flex > .recent-post > a {
-    height: 300px;
-    width: 200px;
-    padding: 17px;
-  }
-
-  .flex > .sections > a {
-    height: 300px;
-    width: 200px;
-    padding: 17px;
-  }
-
-  .flex > .sections > a > img {
-    height: 250px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  .flex > .sections > a > p {
-    font-size: 20px;
-  }
-
-  .flex > .subscription > div > input {
-    height: 25px;
-    width: 500px;
-    border-radius: 5px;
-  }
-
-  .flex > .subscription > div > button {
-    border-radius: 5px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .flex > nav > .nav1 > .home {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 10%;
-    flex: 1 1 10%;
-  }
-
-  .flex > nav > .nav1 > input {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 75%;
-    flex: 1 1 75%;
-  }
-
-  .flex > .offers {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  .flex > nav > div > div.menu > ul {
+    width: 100%;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    padding: 0;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    text-align: center;
   }
-
-  .flex > .offers > * {
-    visibility: visible;
-    position: relative;
-  }
-
-  .flex > .offers > div {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 30%;
-    flex: 1 1 30%;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
+  .flex > nav > div > div.menu > ul > li {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    text-align: center;
-    padding: 5px 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    height: 60px;
+    width: 25%;
   }
-
-  .flex > .subscription {
+  .flex > nav > div > div.menu > ul > li > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    font-family: var(--ff3);
+  }
+  .flex > header {
+    background-color: #fff;
+  }
+  .flex > header > div .ad1 > img {
     height: 200px;
   }
 
-  .flex > .subscription > div > p {
-    font-size: 16px;
-    font-weight: 500;
+  .flex > header > div .ad2 > img {
+    height: 180px;
   }
-
-  .flex > .subscription > div > input {
-    width: 700px;
-    height: 40px;
-    border-radius: 30px 0 0 30px;
+  .flex > .subscription {
+    width: calc(100vw - 200px);
   }
-
-  .flex > .subscription > div > button {
-    width: 130px;
-    height: 40px;
-    border-radius: 0 30px 30px 0;
+  .flex > .sections > div > div > a,
+  .flex > .recent-post > div > div a {
+    margin: 20px;
   }
-
-  .flex > .recent-post > a {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 25%;
-    flex: 1 1 25%;
-    height: 250px;
-    width: 250px;
+  .flex > .offers {
+    display: none;
   }
-
-  .flex > .sections > a {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 25%;
-    flex: 1 1 25%;
-    height: 250px;
-    width: 250px;
+}
+@media screen and (min-width: 1000px) {
+  :root {
+    --section-div-margin: 30px;
+    --section-div-padding: 20px 100px;
   }
 }
