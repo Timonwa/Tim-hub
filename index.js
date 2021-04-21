@@ -12,3 +12,15 @@ function myfunction(){
     document.getElementById("close").style.display = "none";
     }
 };
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function(){
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos){
+        document.getElementsById("nav").style.top ="0px"
+    }
+    else {
+        document.getElementsById("nav").style.top ="-120px"
+    }
+    prevScrollpos = currentScrollPos;
+}

@@ -1,3 +1,9 @@
+@import url('../fonts/DancingScript-VariableFont_wght.ttf');
+@import url('../fonts/Kalam-Light.ttf');
+@import url('../fonts/PlayfairDisplay-VariableFont_wght.ttf');
+@import url('../fonts/Raleway-VariableFont_wght.ttf');
+
+
 /*! root file */
 :root {
   /** variables */
@@ -27,7 +33,8 @@
   --section-div-margin: 30px;
   --section-div-padding: 20px;
   /* font */
-  --ff1: "Dancing Script", cursive;
+  --ff0: "Dancing Script", cursive;
+  --ff1: "Kalam", cursive;
   --ff2: "Raleway", sans-serif;
   --ff3: "Playfair Display", serif;
 }
@@ -196,7 +203,7 @@ ul {
   z-index: 200;
 }
 .flex > nav > div {
-  position: fixed;
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -205,8 +212,6 @@ ul {
   background-color: var(--main-bg-white);
   color: var(--nav-bar-color);
   padding-top: 10px;
-  position: relative;
-  /* height: 190px; */
 }
 .flex > nav > div > div {
   display: flex;
@@ -218,8 +223,8 @@ ul {
 }
 .flex > nav > div > div.home {
   margin-left: 20px;
-  width: calc(100vw - 215px);
-  font-family: var(--ff1);
+  width: calc(100vw - 200px);
+  font-family: var(--ff0);
   order: 0;
   justify-content: start;
   color: var(--main-bg-light-blue);
@@ -235,7 +240,7 @@ ul {
   order: 2;
 }
 .flex > nav > div > div.menu-warp {
-  margin-right: 20px;
+  /* margin-right: 20px; */
   width: 40px;
   display: flex;
   order: 3;
